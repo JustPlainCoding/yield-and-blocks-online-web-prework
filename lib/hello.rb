@@ -1,7 +1,7 @@
 def hello_t(array)
-  array.each do |name|
-    puts "#{name}"
-  end
+  if !array
+    puts "Hey!"
+  yield
 end
 
 # call your method here!
